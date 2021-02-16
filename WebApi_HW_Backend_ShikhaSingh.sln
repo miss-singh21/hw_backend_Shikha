@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi_HW_Backend_ShikhaSingh", "WebAPiHW_ShikhaSingh\WebApi_HW_Backend_ShikhaSingh.csproj", "{FD70EE6D-FC55-4DB9-AA9A-289990461541}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPiHW_ShikhaSingh", "WebAPiHW_ShikhaSingh\WebAPiHW_ShikhaSingh.csproj", "{FD70EE6D-FC55-4DB9-AA9A-289990461541}"
 	ProjectSection(ProjectDependencies) = postProject
 		{51CF599F-0D93-4708-81D9-83B9BA53F013} = {51CF599F-0D93-4708-81D9-83B9BA53F013}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcmiddleware", "mvcmiddleware\mvcmiddleware.csproj", "{51CF599F-0D93-4708-81D9-83B9BA53F013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi_HW_Backend_Shikhasingh.Tests", "WebApi_HW_Backend_Shikhasingh.Tests\WebApi_HW_Backend_Shikhasingh.Tests.csproj", "{6D6601DD-5BA0-4C48-9F89-6098472EBED1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD70EE6D-FC55-4DB9-AA9A-289990461541} = {FD70EE6D-FC55-4DB9-AA9A-289990461541}
+		{51CF599F-0D93-4708-81D9-83B9BA53F013} = {51CF599F-0D93-4708-81D9-83B9BA53F013}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,10 @@ Global
 		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6601DD-5BA0-4C48-9F89-6098472EBED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6601DD-5BA0-4C48-9F89-6098472EBED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6601DD-5BA0-4C48-9F89-6098472EBED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6601DD-5BA0-4C48-9F89-6098472EBED1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
