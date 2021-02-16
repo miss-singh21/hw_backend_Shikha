@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Middlware.Models.StudentModel>
+
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h1>Students Details</h1>
+
+<p>
+    <a href="@Url.Action("PutStudent", "Students")" class="btn btn-default">Create New Student Entry</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ADDRESS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EMAIL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AGE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ADDRESS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EMAIL)
+            </td>
+            <td>
+                <a href="@Url.Action("PutStudent", "Students", new { id=item.ID})" class="btn btn-default">Edit</a> |
+                <a href="@Url.Action("Delete", "Students", new { id=item.ID})" class="btn btn-default">Delete</a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

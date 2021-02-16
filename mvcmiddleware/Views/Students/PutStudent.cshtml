@@ -1,0 +1,43 @@
+﻿@model Middlware.Models.StudentModel
+@{
+    ViewData["Title"] = "Add Students";
+}
+
+<div class="form-body">
+    @using (Html.BeginForm())
+    {
+        <br />
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.ID)
+            @Html.EditorFor(Model => Model.ID)
+            @Html.ValidationMessageFor(Model => Model.ID)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.NAME)
+            @Html.EditorFor(Model => Model.NAME)
+            @Html.ValidationMessageFor(Model => Model.NAME)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.AGE)
+            @Html.EditorFor(Model => Model.AGE)
+            @Html.ValidationMessageFor(Model => Model.AGE)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.ADDRESS)
+            @Html.EditorFor(Model => Model.ADDRESS)
+            @Html.ValidationMessageFor(Model => Model.ADDRESS)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(Model => Model.EMAIL)
+            @Html.EditorFor(Model => Model.EMAIL)
+            @Html.ValidationMessageFor(Model => Model.EMAIL)
+        </div>
+        <div class="form-group">
+            <input type="submit" value="submit" class="btn btn-primary" />
+            <input type="reset" value="reset" class="btn btn-primary" />
+        </div>
+    }
+</div>
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+    } 

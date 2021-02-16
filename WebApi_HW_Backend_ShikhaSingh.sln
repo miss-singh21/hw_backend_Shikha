@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi_HW_Backend_ShikhaSingh", "WebAPiHW_ShikhaSingh\WebApi_HW_Backend_ShikhaSingh.csproj", "{FD70EE6D-FC55-4DB9-AA9A-289990461541}"
+	ProjectSection(ProjectDependencies) = postProject
+		{51CF599F-0D93-4708-81D9-83B9BA53F013} = {51CF599F-0D93-4708-81D9-83B9BA53F013}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcmiddleware", "mvcmiddleware\mvcmiddleware.csproj", "{51CF599F-0D93-4708-81D9-83B9BA53F013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD70EE6D-FC55-4DB9-AA9A-289990461541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD70EE6D-FC55-4DB9-AA9A-289990461541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD70EE6D-FC55-4DB9-AA9A-289990461541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD70EE6D-FC55-4DB9-AA9A-289990461541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CF599F-0D93-4708-81D9-83B9BA53F013}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {283F9610-9AE9-45A7-B655-521EE3DEBDFC}
+	EndGlobalSection
+EndGlobal
